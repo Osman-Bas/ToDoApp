@@ -31,4 +31,39 @@ Bu proje, iOS platformu için SwiftUI ile geliştirilmiş ve Firebase ile entegr
 1. **Projeyi klonlayın:**
    ```bash
    git clone https://github.com/kullaniciAdiniz/todo-app-ios.git
-   
+
+2. **Firebase Ayarları:**
+
+   - Firebase Console'da yeni proje oluştur
+   - iOS uygulaması ekle
+   - GoogleService-Info.plist'i indir
+   -Dosyayı Xcode proje dizinine sürükle
+
+3. **Bağımlılıklar:**
+
+# CocoaPods kullanıyorsanız:
+pod install
+
+# SPM kullanıyorsanız:
+xcodebuild -resolvePackageDependencies
+4. **Build ve Çalıştırma**
+
+# Build:
+xcodebuild -workspace TodoApp.xcworkspace -scheme TodoApp
+
+# Veya Xcode'da:
+Command + B (Build)
+Command + R (Run)
+
+## 🤝 Katkı
+
+1. Fork oluştur
+2. Yeni branch aç:
+   git checkout -b yeni-ozellik
+3. Değişiklikleri ekle:
+   git add .
+4. Commit yap:
+   git commit -m "yeni özellik eklendi"
+5. Pushla:
+   git push origin yeni-ozellik
+6. GitHub'da Pull Request aç
