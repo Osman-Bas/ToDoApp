@@ -1,7 +1,4 @@
-# This workflow will build a Swift project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
-
-name: Swift
+name: Xcode Build & Test
 
 on:
   push:
@@ -16,7 +13,21 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+
+    - name: Select Xcode Version (isteğe bağlı)
+      run: sudo xcode-select -s /Applications/Xcode_15.2.app
+
+    - name: Build with xcodebuild
+      run: |
+        xcodebuild clean build \
+        -scheme ToDoApp \
+        -sdk iphonesimulator \
+        -destination 'platform=iOS Simulator,name=iPhone 14' \
+        CODE_SIGNING_ALLOWED=NO
+
+    - name: Run Tests
+      run: |
+        xcodebuild test \
+        -scheme ToDoApp \
+        -sdk iphonesimulator \
+        -destination 'platform=iOS Simulator,name=iPhone 14'
