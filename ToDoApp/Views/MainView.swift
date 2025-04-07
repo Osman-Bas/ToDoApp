@@ -29,7 +29,7 @@ struct MainView: View {
                 }
             ProfileView()
                 .tabItem{
-                    Label("Profile",systemImage: "person.circle")
+                    Label("Profilee",systemImage: "person.circle")
                 }
         }
     }
