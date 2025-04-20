@@ -5,10 +5,10 @@ Bu proje, iOS platformu için SwiftUI ile geliştirilmiş ve Firebase ile entegr
 
 ## Özellikler
 
-- ✅ Firebase Authentication ile kullanıcı girişi (Email/Şifre veya Google Sign-In)
+- ✅ Firebase Authentication ile kullanıcı girişi (Email/Şifre veya Google Sign-In).
 - ✅ Firebase Firestore ile gerçek zamanlı veri senkronizasyonu.
 - ✅ SwiftUI ile modern ve kullanıcı dostu arayüz.
-- ✅ Görev ekleme, düzenleme, silme ve tamamlama işlemleri..
+- ✅ Görev ekleme, düzenleme, silme ve tamamlama işlemleri.
 - ✅ Kategorilere göre görev filtreleme.
 - ✅ Karanlık/Aydınlık tema desteği.
 
