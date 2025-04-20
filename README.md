@@ -9,7 +9,7 @@ Bu proje, iOS platformu için SwiftUI ile geliştirilmiş ve Firebase ile entegr
 - ✅ Firebase Firestore ile gerçek zamanlı veri senkronizasyonu
 - ✅ SwiftUI ile modern ve kullanıcı dostu arayüz
 - ✅ Görev ekleme, düzenleme, silme ve tamamlama işlemleri
-- ✅ Kategorilere göre görev filtreleme
+- ✅ Kategorilere göre görev filtreleme.
 - ✅ Karanlık/Aydınlık tema desteği.
 
 ## Teknolojiler ve Kütüphaneler
